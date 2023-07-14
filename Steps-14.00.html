@@ -1,0 +1,320 @@
+
+Create Dax Measure Table
+14
+<p><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1323/14/1.jpg" style="width: 50%;"></p><p class="MsoListParagraphCxSpFirst"><b><span style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Times New Roman&quot;,serif">1.&nbsp;&nbsp;&nbsp;
+Select the Car_Sales Table and right click on it and select New Measure<o:p></o:p></span></b></p><p class="MsoListParagraphCxSpMiddle"><b><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Times New Roman&quot;,serif">2.&nbsp;&nbsp;&nbsp; From the Power BI desktop ribbon, home tab,
+click on new measure <o:p></o:p></span></b></p><p class="MsoListParagraphCxSpMiddle"><b><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Times New Roman&quot;,serif">3.&nbsp;&nbsp;&nbsp; The formula bar appears at the top of the
+report canvas. <o:p></o:p></span></b></p><p class="MsoListParagraphCxSpMiddle"><b><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Times New Roman&quot;,serif">4.&nbsp;&nbsp;&nbsp; Fill in all the DAX formulas provided
+below, one at a time, and when you finish, Press Enter or select Commit (checkmark
+icon) in the formula bar.<o:p></o:p></span></b></p><p>
+
+
+
+
+
+
+
+</p><p class="MsoListParagraphCxSpLast"><b><span style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></b><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1323/14/2.jpg" style="width: 50%;"></p><p class="MsoListParagraphCxSpFirst"><b><span style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Times New Roman&quot;,serif">5. After creating each measure choose
+the necessary format and decimal for each value (measure)<o:p></o:p></span></b></p><p class="MsoListParagraphCxSpMiddle"><b><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Times New Roman&quot;,serif">6. Save<o:p></o:p></span></b></p><p class="MsoListParagraphCxSpMiddle"><b><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></b></p><p class="MsoListParagraphCxSpMiddle"><b><span style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Times New Roman&quot;,serif">DAX Formulas<o:p></o:p></span></b></p><p class="MsoListParagraphCxSpLast"><b><span style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Times New Roman&quot;,serif">. Average Price =
+AVERAGE(Car_sales[Price])<o:p></o:p></span></b></p><p class="MsoNormal"><b><span style="font-size: 12pt; line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;.
+Average Horsepower = </span></b><b><span style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">SUM</span></b><b><span style="font-size: 12pt; line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#001080;mso-font-kerning:0pt;mso-ligatures:none">Car_sales[Horsepower]</span></b><b><span style="font-size: 12pt; line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;">)</span></b><b><span style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Times New Roman&quot;,serif"><o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; . Average Fuel Efficiency = </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">SUM</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;mso-ligatures:none">Car_sales[Fuel_efficiency]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">)<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .LY EF = </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">CALCULATE</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#68349C;mso-font-kerning:0pt;mso-ligatures:none">[.Average
+Fuel Efficiency]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,</span></b><b><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;
+mso-font-kerning:0pt;mso-ligatures:none">DATEADD</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;mso-ligatures:none">'Calendar'[Date]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,-</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">1</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">YEAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">))<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .LY ES = </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">CALCULATE</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#68349C;mso-font-kerning:0pt;mso-ligatures:none">[.Total
+Engine Size]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,</span></b><b><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;
+mso-font-kerning:0pt;mso-ligatures:none">DATEADD</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;mso-ligatures:none">'Calendar'[Date]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,-</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">1</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">YEAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">))<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .LY Price = CALCULATE([AVG
+Price],DATEADD('Calendar'[Date],-1,YEAR))<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .LY.Horsepower = </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">CALCULATE</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">([.Average
+Horsepower],</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;
+mso-ligatures:none">DATEADD</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">('Calendar'[Date],-</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">1</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,YEAR))<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Total Engine Size = </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">SUM</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;mso-ligatures:none">'Car_sales'[Engine
+Size (liters)]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">)<o:p></o:p></span></b></p><p class="MsoNormal" style="line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Total Car Sales = (( </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">Sum</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;mso-ligatures:none">Car_sales[Price_in_thousands]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">)*</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">1000</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">))<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .YoY Price%. = </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">SUMX</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">VALUES</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">('Calendar'[Year]),[.YoY_VAR])<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">YoY
+Engine Size% = </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;
+mso-ligatures:none">SUMX</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">VALUES</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;mso-ligatures:none">'Calendar'[Year]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#68349C;mso-font-kerning:0pt;mso-ligatures:none">[.YoY_VAR
+ES]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">)<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">YoY Fuel
+Efficiency% = </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;
+mso-ligatures:none">SUMX</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">VALUES</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;mso-ligatures:none">'Calendar'[Year]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#68349C;mso-font-kerning:0pt;mso-ligatures:none">[.YoY_VAR
+FE]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">)<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">YoY
+Hpower% = </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;
+mso-ligatures:none">SUMX</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">VALUES</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;mso-ligatures:none">'Calendar'[Year]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#68349C;mso-font-kerning:0pt;mso-ligatures:none">[.YoY_VAR
+Horsepower]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">)<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">Sales
+YoY% = <o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">DIVIDE</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;
+&nbsp; </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;
+mso-ligatures:none">SUM</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#001080;mso-font-kerning:0pt;mso-ligatures:none">'Car_sales'[Sales_in_thousands]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">) - </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">CALCULATE</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;
+&nbsp; &nbsp; &nbsp; </span></b><b><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;
+mso-font-kerning:0pt;mso-ligatures:none">SUM</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;mso-ligatures:none">'Car_sales'[Sales_in_thousands]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;
+&nbsp; &nbsp; &nbsp; </span></b><b><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;
+mso-font-kerning:0pt;mso-ligatures:none">SAMEPERIODLASTYEAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;mso-ligatures:none">'Calendar'[Date]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">)<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;
+&nbsp; ),<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;
+&nbsp; </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;
+mso-ligatures:none">CALCULATE</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;
+&nbsp; &nbsp; &nbsp; </span></b><b><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;
+mso-font-kerning:0pt;mso-ligatures:none">SUM</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;mso-ligatures:none">'Car_sales'[Latest_Launch]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;
+&nbsp; &nbsp; &nbsp; </span></b><b><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;
+mso-font-kerning:0pt;mso-ligatures:none">SAMEPERIODLASTYEAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;mso-ligatures:none">'Calendar'[Date]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">)<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;
+&nbsp; )<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">) * </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">100</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;"><o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">KPI IND
+YOY% = </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;
+mso-ligatures:none">IF</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#68349C;mso-font-kerning:0pt;mso-ligatures:none">[Sales YoY%]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&lt;</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">0</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">9660</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">IF</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#68349C;mso-font-kerning:0pt;mso-ligatures:none">[Sales
+YoY%]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&gt;</span></b><b><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#09885A;
+mso-font-kerning:0pt;mso-ligatures:none">0</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">9650</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICODE</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#A31515;mso-font-kerning:0pt;mso-ligatures:none">"-"</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">))))<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">KPI IND
+YOY% price = </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;
+mso-ligatures:none">IF</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#68349C;mso-font-kerning:0pt;mso-ligatures:none">[YoY% price]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&lt;</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">0</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">9660</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">IF</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#68349C;mso-font-kerning:0pt;mso-ligatures:none">[YoY%
+price]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&gt;</span></b><b><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#09885A;
+mso-font-kerning:0pt;mso-ligatures:none">0</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">9650</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICODE</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#A31515;mso-font-kerning:0pt;mso-ligatures:none">"-"</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">))))<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">KPI IND
+YOY% Horsepower = </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;
+mso-ligatures:none">IF</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#68349C;mso-font-kerning:0pt;mso-ligatures:none">[.YoY% Horsepower
+Change]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&lt;</span></b><b><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#09885A;
+mso-font-kerning:0pt;mso-ligatures:none">0</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">9660</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">IF</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#68349C;mso-font-kerning:0pt;mso-ligatures:none">[.YoY%
+Horsepower Change]</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&gt;</span></b><b><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#09885A;
+mso-font-kerning:0pt;mso-ligatures:none">0</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">9650</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICODE</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#A31515;mso-font-kerning:0pt;mso-ligatures:none">"-"</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">))))<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">KPI IND
+YOY% Fule Efficiency = </span></b><b><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;
+mso-font-kerning:0pt;mso-ligatures:none">IF</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">([YoY%
+Fuel_efficiency]&lt;</span></b><b><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#09885A;
+mso-font-kerning:0pt;mso-ligatures:none">0</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">9660</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">IF</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">([YoY%
+Fuel_efficiency]&gt;</span></b><b><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#09885A;
+mso-font-kerning:0pt;mso-ligatures:none">0</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">9650</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICODE</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#A31515;mso-font-kerning:0pt;mso-ligatures:none">"-"</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">))))<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">KPI IND
+YOY% = </span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;
+mso-ligatures:none">IF</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">([Sales YoY%]&lt;</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">0</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">9660</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">IF</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">([Sales
+YoY%]&gt;</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;
+mso-ligatures:none">0</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">,</span></b><b><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">9650</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">),</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICHAR</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">UNICODE</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">(</span></b><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#A31515;mso-font-kerning:0pt;mso-ligatures:none">"-"</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">))))<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><span style="font-size: 12pt; font-family: Consolas;">Waterfall Value = </span><span style="font-size:12.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">SWITCH</span><span style="font-size: 12pt; font-family: Consolas;"> (</span><span style="font-size:12.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#3165BB;mso-font-kerning:0pt;mso-ligatures:none">SELECTEDVALUE</span><span style="font-size: 12pt; font-family: Consolas;">(</span><span style="font-size:12.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#001080;mso-font-kerning:0pt;mso-ligatures:none">'Waterfall Chart KPI''s
+(2)'[Index]</span><span style="font-size: 12pt; font-family: Consolas;">),</span><span style="font-size:12.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;
+mso-ligatures:none">1</span><span style="font-size: 12pt; font-family: Consolas;">,</span><span style="font-size:12.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;
+mso-ligatures:none">'Car_sales'</span><span style="font-size:12.0pt;font-family:
+Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#68349C;mso-font-kerning:0pt;mso-ligatures:none">[.YOY Price%.]</span><span style="font-size: 12pt; font-family: Consolas;">,</span><span style="font-size:12.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">2</span><span style="font-size: 12pt; font-family: Consolas;">,</span><span style="font-size:12.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#001080;mso-font-kerning:0pt;mso-ligatures:none">'Car_sales'</span><span style="font-size:12.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:#68349C;mso-font-kerning:0pt;
+mso-ligatures:none">[.Sales YOY%]</span><span style="font-size: 12pt; font-family: Consolas;">,</span><span style="font-size:12.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;
+mso-ligatures:none">3</span><span style="font-size: 12pt; font-family: Consolas;">,</span><span style="font-size:12.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;
+mso-ligatures:none">'Car_sales'</span><span style="font-size:12.0pt;font-family:
+Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#68349C;mso-font-kerning:0pt;mso-ligatures:none">[YOY ES%]</span><span style="font-size: 12pt; font-family: Consolas;">,</span><span style="font-size:12.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#09885A;mso-font-kerning:0pt;mso-ligatures:none">4</span><span style="font-size: 12pt; font-family: Consolas;">,</span><span style="font-size:12.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#001080;mso-font-kerning:0pt;mso-ligatures:none">'Car_sales'</span><span style="font-size:12.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:#68349C;mso-font-kerning:0pt;
+mso-ligatures:none">[YOY FE%]</span><span style="font-size: 12pt; font-family: Consolas;">,</span><span style="font-size:12.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:#09885A;mso-font-kerning:0pt;
+mso-ligatures:none">5</span><span style="font-size: 12pt; font-family: Consolas;">,</span><span style="font-size:12.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:#001080;mso-font-kerning:0pt;
+mso-ligatures:none">'Car_sales'</span><span style="font-size:12.0pt;font-family:
+Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#68349C;mso-font-kerning:0pt;mso-ligatures:none">[YOY Hpower%]</span><span style="font-size: 12pt; font-family: Consolas;">)<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;</span></b></p><p class="MsoListParagraphCxSpLast">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;</span></b><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">GIF</span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1323/14/3.gif" style="width: 100%;"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;"><br></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;"><br></span></b></p><p class="MsoNormal" style="margin-bottom:0in;line-height:13.5pt;background:#FFFFFE"><b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;"><o:p></o:p></span></b></p>
+
+<p><a href="https://powerbidocs.com/2020/10/22/create-a-measure-table-in-power-bi/" target="_blank">Create a Measure table in Power BI</a></p><p><br></p>
+
